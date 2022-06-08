@@ -45,7 +45,7 @@ button a {
 }
 
 @media screen and (max-width: 935px) {
-    form {
+    #formulario {
         padding: 7%;
         width: 30%;
     }
