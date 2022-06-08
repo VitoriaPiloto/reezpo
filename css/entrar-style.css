@@ -7,6 +7,10 @@ footer {
     float: right;
 }
 
+label {
+    font-size: 4.5vh;
+}
+
 form {
     width: 90%;
 }
@@ -36,8 +40,22 @@ button a {
 }
 
 @media screen and (max-width: 720px) {
-    form {
-        width: 20%;
+    body {
+        overflow: hidden;
+    }
+    #formulario {
+        position: absolute;
+    }
+    input {
+        width: 80vw;
+    }
+    button {
+        width: 40vw;
+    }
+    button a {
+        margin-top: 10px;
+        padding: 10vh;
+        font-size: 3vh;
     }
     img {
         visibility: hidden;
@@ -45,7 +63,7 @@ button a {
 }
 
 @media screen and (max-width: 935px) {
-    #formulario {
+    form {
         padding: 7%;
         width: 30%;
     }
