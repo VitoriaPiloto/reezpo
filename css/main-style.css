@@ -46,11 +46,10 @@ li {
 
 button {
     width: 70%;
-    height: 35px;
+    height: 6vh;
     border: none;
     background-color: #F45B69;
     border-radius: 20px;
-    margin-top: 10px;
 }
 
 button a {

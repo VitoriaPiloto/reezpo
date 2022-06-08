@@ -1,33 +1,106 @@
 footer {
-    position: fixed;
-}
-
-#formulario {
-    padding: 10%;
-    float: right;
+    position: inherit;
 }
 
 form {
+    padding: 2%;
     width: 90%;
 }
 
+fieldset {
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+legend {
+    font-size: 4.5vh;
+    color: #FEC84E;
+    padding: 2%;
+}
+
 label {
-    color: aliceblue;
-    font-size: 3.5vh;
+    color: #ecfff8;
+    font-size: 3vh;
+    padding: 2%;
 }
 
 input {
+    background-color: #ecfff8;
     border: none;
     padding: 15px;
     width: 500px;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 20px;
+    margin-left: 1vw;
 }
 
-img {
-    padding-top: 4.3%;
-    padding-left: 5%;
+#lbl-numero-cartao,
+#lbl-cv {
+    font-size: 2.5vh;
+    padding: 0px;
+}
+
+div#div-numero-cartao {
+    float: left;
+}
+
+#numero-cartao {
+    width: 25vw;
+    font-size: 2.5vh;
+    float: left;
+}
+
+#cv {
+    width: 10vw;
+    font-size: 2.5vh;
+}
+
+#btn-blt {
+    background-color: #FEC84E;
+    margin: 2vh;
+    height: 6vh;
+    width: 100%;
+}
+
+#btn-grg {
+    margin: 2vh;
+    width: 100%;
+}
+
+#btn-grg:hover {
+    color: #ecfff8;
+}
+
+div#cvv {
+    float: right;
+    margin-right: 2%;
+}
+
+select {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: url(../assets/img/icons8-downward-32.png) 97% / 5% no-repeat #ecfff8;
+    padding: 15px;
+    width: 30vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    font-size: 2vh;
+    margin-left: 1vw;
+}
+
+option {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    height: 6vh;
+    font-size: 2.4vh;
 }
 
 button a {
@@ -35,22 +108,69 @@ button a {
     font-size: 3vh;
 }
 
-@media screen and (max-width: 935px) and (min-width: 200px) {
+.envio-cartao {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.escondido {
+    display: none;
+}
+
+h3,
+h4 {
+    color: #ecfff8;
+    text-align: center;
+    position: relative;
+    padding: 0.5%;
+}
+
+#alert {
+    width: 30px;
+}
+
+div#aviso h4 {
+    text-align: justify;
+}
+
+span {
+    color: #F45B69;
+    font-size: 3vh;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        overflow: hidden;
+    }
+    #formulario {
+        position: absolute;
+    }
+    input {
+        width: 80vw;
+    }
+    button {
+        width: 40vw;
+    }
+    button a {
+        margin-top: 10px;
+        padding: 10vh;
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 935px) {
     form {
         padding: 7%;
         width: 30%;
     }
-    img {
-        visibility: hidden;
-    }
 }
 
 @media screen and (max-width: 1900px) {
-    img {
-        position: absolute;
-        top: 10%;
-        width: 30vw;
-    }
     form {
         padding: 2%;
     }

@@ -67,8 +67,8 @@ div#definicao p {
 }
 
 .contratar {
-    width: 30%;
-    height: 40px;
+    width: 30vw;
+    height: 7vh;
     margin-bottom: 5%;
     background-color: #ecfff8;
 }
@@ -76,5 +76,8 @@ div#definicao p {
 @media screen and (max-width:800px) {
     .column {
         width: 100%;
+    }
+    .contratar {
+        width: 40vw;
     }
 }

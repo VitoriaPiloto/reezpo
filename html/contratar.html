@@ -31,15 +31,96 @@
             </li>
         </ul>
     </header>
-    <form>
+    <form class="center">
         <fieldset>
-
+            <legend>Informações pessoais</legend>
             <label>E-mail</label>
             <input type="email">
+            <br>
             <label>Senha</label>
-            <input type="email">
+            <input type="password">
+            <br>
+            <label>Plano escolhido</label>
+            <br>
+            <select id="escolha-plano">
+                <option value="item-1">Plano família</option>
+                <option value="item-2">Plano universitário</option>
+                <option value="item-33">Plano econômico</option>
+            </select>
         </fieldset>
-
+        <fieldset>
+            <legend>Pagamento</legend>
+            <label>Selecione o método</label>
+            <select id="droplist" onchange="exibe()">
+                <option value="-1" selected>Selecione para exibir...</option>
+                <option value="item-1" id="1">Cartão de crédito</option>
+                <option value="item-2" id="2">Cartão de débito</option>
+                <option value="item-3" id="3">Boleto</option>
+                <option value="item-4" id="4">Pix</option>
+            </select>
+            <br>
+            <div id="credito" class="escondido">
+                <label>Número do cartão</label>
+                <br>
+                <div id="div-numero-cartao">
+                    <input type="number" maxlength="16" id="numero-cartao">
+                </div>
+                <div id="cvv">
+                    <label id="lbl-cv">CVV</label>
+                    <input type="numer" maxlength="3" id="cv">
+                    <br>
+                </div>
+                <div class="center">
+                    <button class="envio-cartao" onclick="alerta()">Enviar</button>
+                </div>
+            </div>
+            <br>
+            <div id="debito" class="escondido">
+                <label>Número do cartão</label>
+                <br>
+                <div id="div-numero-cartao">
+                    <input type="number" maxlength="16" id="numero-cartao">
+                </div>
+                <div id="cvv">
+                    <label id="lbl-cv">CVV</label>
+                    <input type="numer" maxlength="3" id="cv">
+                    <br>
+                </div>
+                <div class="center">
+                    <button class="envio-cartao" onclick="alerta()">Enviar</button>
+                </div>
+            </div>
+            <br>
+            <div id="boleto" class="escondido">
+                <table class="center">
+                    <tr>
+                        <td>
+                            <button onclick="abrirBoleto()" id="btn-grg">Gerar boleto</button>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <button class="envio-cartao" id="btn-blt" onclick="alerta()">Pagamento feito</button>
+                        </td>
+                    </tr>
+                </table>
+                <div id="aviso">
+                    <h4> <img id="alert" src="../assets/img/alarm_alert_internet_light_security_siren_warning_icon_127093.png"> <span>Atenção:</span> O pagamento por meio de boleto será compensado em até 3 dias. Fique atento ao seu email nos próximos meses
+                        para renovar a sua conta. Caso não seja pago em até 2 semanas, o acesso será negado e a conta suspensa.</h4>
+                </div>
+            </div>
+            <div id="pix" class="escondido">
+                <h3>Chave pix:</h3>
+                <h4>Telefone: (21)17189911 </h4>
+                <h4>Razão social: Reezpo streaming lta. </h4>
+                <div id="aviso">
+                    <h4> <img id="alert" src="../assets/img/alarm_alert_internet_light_security_siren_warning_icon_127093.png"> <span>Atenção:</span> O pagamento por meio de pix irá contratar apenas um mês de serviço. Fique atento ao seu email próximo ao final
+                        do período para renovar sua conta.</h4>
+                </div>
+            </div>
+        </fieldset>
+        <br>
     </form>
     <footer>
         <div>
@@ -48,7 +129,49 @@
             </p>
         </div>
     </footer>
+    <script type="text/javascript">
+        function exibe() {
+            if (document.getElementById("droplist").value != "-1") {
+                if (document.getElementById("droplist").value == "item-1") {
+                    document.getElementById("credito").style.display = "block";
+                    document.getElementById("debito").style.display = 'none';
+                    document.getElementById("boleto").style.display = 'none';
+                    document.getElementById("pix").style.display = 'none';
+                } else {
+                    if (document.getElementById("droplist").value == "item-2") {
+                        document.getElementById("credito").style.display = "none";
+                        document.getElementById("debito").style.display = 'block';
+                        document.getElementById("boleto").style.display = 'none';
+                        document.getElementById("pix").style.display = 'none';
+                    } else {
+                        if (document.getElementById("droplist").value == "item-3") {
+                            document.getElementById("credito").style.display = "none";
+                            document.getElementById("debito").style.display = 'none';
+                            document.getElementById("boleto").style.display = 'block';
+                            document.getElementById("pix").style.display = 'none';
+                        } else {
+                            document.getElementById("credito").style.display = "none";
+                            document.getElementById("debito").style.display = 'none';
+                            document.getElementById("boleto").style.display = 'none';
+                            document.getElementById("pix").style.display = 'block';
 
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        function alerta() {
+            window.alert("Seu pagamento está sendo processado. Confira sua caixa de email para conferir seu login e senha e volte logo.");
+            window.open("../html/entrar.html");
+        }
+
+        function abrirBoleto() {
+            window.open("../assets/pdf/Boleto.pdf")
+        }
+    </script>
     <script type="text/javascript" src="../js/functions.js"></script>
 </body>
 
