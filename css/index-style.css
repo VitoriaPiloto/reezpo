@@ -1,0 +1,123 @@
+#texto-principal {
+    float: left;
+    width: 50%;
+    padding: 10%;
+    font-size: 4.3vh;
+    margin-top: 3.3%;
+}
+
+span {
+    color: #ecfff8;
+}
+
+button {
+    height: 50px;
+}
+
+button a {
+    font-size: 3vh;
+}
+
+h2 {
+    color: #FEC84E;
+}
+
+h3 {
+    color: #ecfff8;
+}
+
+img {
+    width: 27%;
+    margin-right: 12.5%;
+    margin-top: 3.5%;
+    float: right;
+}
+
+#aspas {
+    font-size: 7vh;
+    color: #FEC84E;
+}
+
+#fulana,
+#beltrano,
+#ciclano {
+    border-radius: 100%;
+}
+
+#fulana {
+    width: 200%;
+}
+
+#beltrano {
+    width: 190%;
+}
+
+#ciclano {
+    width: 270%;
+}
+
+hr {
+    background-color: grey;
+    border: none;
+    height: 2.5px;
+    margin: auto;
+    width: 70%;
+}
+
+#secao-facilidades,
+#secao-comentarios {
+    padding: 7%;
+    color: #ecfff8;
+}
+
+#secao-comentarios {
+    text-align: center;
+}
+
+.titulo-secao {
+    margin: auto;
+    width: 50%;
+    padding-top: 3%;
+}
+
+.comentador {
+    color: #FEC84E;
+    font-size: larger;
+    float: right;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row {
+    padding-top: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 850px) {
+    #texto-principal {
+        width: 70%;
+    }
+    img {
+        width: 30%;
+        margin-top: 5%;
+        margin-right: 0px;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        visibility: hidden;
+    }
+}

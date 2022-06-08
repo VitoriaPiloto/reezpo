@@ -1,0 +1,57 @@
+footer {
+    position: fixed;
+}
+
+#formulario {
+    padding: 10%;
+    float: right;
+}
+
+form {
+    width: 90%;
+}
+
+label {
+    color: aliceblue;
+    font-size: 3.5vh;
+}
+
+input {
+    border: none;
+    padding: 15px;
+    width: 500px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+img {
+    padding-top: 4.3%;
+    padding-left: 5%;
+}
+
+button a {
+    padding: 10px;
+    font-size: 3vh;
+}
+
+@media screen and (max-width: 935px) {
+    form {
+        padding: 7%;
+        width: 30%;
+    }
+    img {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    img {
+        position: absolute;
+        top: 10%;
+        width: 30vw;
+    }
+    form {
+        padding: 2%;
+    }
+}

@@ -1,0 +1,80 @@
+.center {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row {
+    padding-top: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#familia,
+#estudante,
+#economico {
+    width: 70%;
+}
+
+h2 {
+    color: #FEC84E;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+div.column p {
+    color: #ecfff8;
+}
+
+footer {
+    position: inherit;
+}
+
+hr {
+    background-color: grey;
+    border: none;
+    height: 2.5px;
+    margin: auto;
+    width: 70%;
+}
+
+h2 {
+    color: #FEC84E;
+    padding-top: 3%;
+}
+
+#definicao {
+    padding-top: 4.5%;
+    padding-right: 10%;
+    padding-left: 14%;
+    color: #ecfff8;
+}
+
+div#definicao p {
+    margin-bottom: 30px;
+    font-size: 2.7vh;
+}
+
+.contratar {
+    width: 30%;
+    height: 40px;
+    margin-bottom: 5%;
+    background-color: #ecfff8;
+}
+
+@media screen and (max-width:800px) {
+    .column {
+        width: 100%;
+    }
+}
