@@ -35,9 +35,8 @@ button a {
     font-size: 3vh;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
     form {
-        padding: 7%;
         width: 20%;
     }
     img {
