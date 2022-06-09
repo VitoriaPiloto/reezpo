@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Início</title>
+    <link rel="stylesheet" href="../css/dashboard-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html"><span id="descubra">Descubra</span></a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href=""><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href=""><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href=""><span id="playlist">Playlists</span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href=""><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="secao-iniciar">
+        <h1>Olá, bem vinde. Veja o que preparamos:</h1>
+        <hr id="sep-inc" class="center">
+        <div class="row">
+            <div class="column">
+                <a href="">
+                    <img src="../assets/img/capa-1.jpg" id="capa-1">
+                    <h3 id="descricao-1">Psicodelia</h3>
+                </a>
+            </div>
+            <div class="column">
+                <a href="">
+                    <img src="../assets/img/capa-2.jpg" id="capa-2">
+                    <h3 id="descricao-2">Rock alternativo</h3>
+                </a>
+            </div>
+            <div class="column">
+                <a href="">
+                    <img src="../assets/img/capa-3.jpg" id="capa-3">
+                    <h3 id="descricao-3">Good musics for bad days</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="mais-populares">
+        <h2>Mais populares</h2>
+        <hr id="sep-pop">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> As it Was </h3>
+                    <h4> Harry Styles </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                        <source src="../assets/audio/Harry Styles - As It Was (Audio) (128 kbps).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
+
+</html>
