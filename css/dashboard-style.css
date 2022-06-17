@@ -13,7 +13,7 @@ section {
     width: 20vw;
     float: left;
     background-color: #55286f;
-    height: 100vh;
+    height: 150vh;
 }
 
 img#user {
@@ -233,7 +233,7 @@ img#capa-3 {
 
 div#mais-populares {
     position: absolute;
-    top: 64vh;
+    top: 67vh;
     left: 27vw;
 }
 
@@ -253,7 +253,7 @@ div#mais-populares {
 
 div#abraco {
     margin: auto;
-    position: fixed;
+    position: inherit;
     bottom: 0px;
     width: 100%;
     height: 10vh;

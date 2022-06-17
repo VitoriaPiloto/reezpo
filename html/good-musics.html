@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Good musics for bad days</title>
+    <link rel="stylesheet" href="../css/playlist-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href=""><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href=""><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href=""><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/capa-3.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Good musics for bad days</h1>
+        <h3 id="descricao">Músicas para os dias que você está borocoxo e um saco.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> Vou deixar </h3>
+                    <h4> Skank </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/Skank - Vou Deixar (Letra_Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">2.</span> Bete Balanço </h3>
+                    <h4> Barão Vermelho </h4>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Barão Vermelho - Bete Balanço - Legendado_Letra.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">3.</span> Nós vamos invadir sua praia </h3>
+                    <h4> Ultraje a Rigor </h4>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Ultraje a Rigor - Nós Vamos Invadir sua Praia.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">4.</span> Ideologia </h3>
+                    <h4> Cazuza </h4>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Cazuza - Ideologia (Letra)ᴴᴰ.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">5.</span> Geração Coca-Cola </h3>
+                    <h4> Legião Urbana </h4>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Legião Urbana - Geração Coca-Cola.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">6.</span> Tempos Modernos </h3>
+                    <h4> Jota Quest </h4>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/Jota Quest - Tempos Modernos (Videoclipe).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">7.</span> Lança Perfume </h3>
+                    <h4> Rita Lee </h4>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Lança Perfume.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">8.</span> O Descobridor Dos Sete Mares </h3>
+                    <h4> Tim Maia </h4>
+                </td>
+                <td>
+                    <audio id="player8">
+                            <source src="../assets/audio/O Descobridor Dos Sete Mares.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player8').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">9.</span> Onde você mora? </h3>
+                    <h4> Cidade Negra </h4>
+                </td>
+                <td>
+                    <audio id="player9">
+                            <source src="../assets/audio/Cidade Negra - Onde Você Mora_ (Pseudo Video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player9').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">10.</span> Minha Alma </h3>
+                    <h4> O Rappa </h4>
+                </td>
+                <td>
+                    <audio id="player10">
+                            <source src="../assets/audio/O Rappa - Minha Alma -Letra_Lyrics.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player10').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">11.</span> Hoje eu quero me perder </h3>
+                    <h4> Lagum </h4>
+                </td>
+                <td>
+                    <audio id="player11">
+                            <source src="../assets/audio/Lagum - Hoje eu quero me perder (legendado).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player11').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">12.</span> Você Não Soube Me Amar </h3>
+                    <h4> Blitz </h4>
+                </td>
+                <td>
+                    <audio id="player12">
+                            <source src="../assets/audio/Você Não Soube Me Amar.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player12').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">13.</span> Kátia Flávia, godiva do Irajá </h3>
+                    <h4> Fausto Fawcett & Robôs Efêmeros </h4>
+                </td>
+                <td>
+                    <audio id="player13">
+                            <source src="../assets/audio/Fausto Fawcett e os Robôs Efêmeros - Kátia Flávia (Video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player13').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">14.</span> Se... (Ao Vivo) </h3>
+                    <h4> Djavan </h4>
+                </td>
+                <td>
+                    <audio id="player14">
+                            <source src="../assets/audio/Djavan - Se... (Ao Vivo).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player14').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">15.</span> Puro Êxtase </h3>
+                    <h4> Barão Vermelho </h4>
+                </td>
+                <td>
+                    <audio id="player15">
+                            <source src="../assets/audio/Barão Vermelho-Puro Êxtase.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player15').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">16.</span> Garota Nacional </h3>
+                    <h4> Skank </h4>
+                </td>
+                <td>
+                    <audio id="player16">
+                            <source src="../assets/audio/Skank - Garota Nacional (Videokê).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player16').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">17.</span> Você Vai Estar Na Minha </h3>
+                    <h4> Negra Li </h4>
+                </td>
+                <td>
+                    <audio id="player17">
+                            <source src="../assets/audio/02- Você Vai Estar Na Minha - Negra Li.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player17').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">18.</span> Mina Do Condomínio </h3>
+                    <h4> Seu Jorge </h4>
+                </td>
+                <td>
+                    <audio id="player18">
+                            <source src="../assets/audio/Mina Do Condomínio.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player18').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">19.</span> Quero Te Encontrar </h3>
+                    <h4> Claudinho e Bochecha </h4>
+                </td>
+                <td>
+                    <audio id="player19">
+                            <source src="../assets/audio/Claudinho e Buchecha - Quero Te Encontrar (Clipe Oficial).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player19').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">20.</span> Morena </h3>
+                    <h4> Victor Kley </h4>
+                </td>
+                <td>
+                    <audio id="player20">
+                        <source src="../assets/audio/Vitor Kley - Morena (Acoustic Version).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player20').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

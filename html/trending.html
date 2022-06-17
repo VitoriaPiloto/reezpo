@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Trending </title>
+    <link rel="stylesheet" href="../css/trending-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend"><span id="trending"> Trending </span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href=""><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href=""><span id="playlist">Playlists</a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href=""><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">TOP 50</h1>
+        <h3 id="descricao">AS 50 MUSICAS MAIS OUVIDAS NO MUNDO</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> Falling Back </h3>
+                    <h4> Drake </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/Falling Back.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">2.</span> I Like You (A Happier Song) </h3>
+                    <h4> Post Malone, Doja Cat </h4>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/I Like You (A Happier Song) (with Doja Cat).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">3.</span> As It Was </h3>
+                    <h4> Harry Styles </h4>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/As It Was.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">4.</span> Glimpse of Us </h3>
+                    <h4> Joji </h4>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Glimpse of Us.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">5.</span> About Damn Time </h3>
+                    <h4> Lizzo </h4>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/About Damn Time.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">6.</span> First Class </h3>
+                    <h4> Jack Harlow </h4>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/First Class.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">7.</span> Woman </h3>
+                    <h4> Doja Cat </h4>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Woman.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">8.</span> Ojitos Lindos </h3>
+                    <h4> Bad Bunny </h4>
+                </td>
+                <td>
+                    <audio id="player8">
+                            <source src="../assets/audio/Ojitos Lindos.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player8').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">9.</span> Ghost </h3>
+                    <h4> Justin Bieber </h4>
+                </td>
+                <td>
+                    <audio id="player9">
+                            <source src="../assets/audio/Ghost.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player9').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">10.</span> WAIT FOR YOU </h3>
+                    <h4> Future, Drake, Tems </h4>
+                </td>
+                <td>
+                    <audio id="player10">
+                            <source src="../assets/audio/WAIT FOR U (feat. Drake & Tems).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player10').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">11.</span> Late Nights Talking </h3>
+                    <h4> Harry Styles </h4>
+                </td>
+                <td>
+                    <audio id="player11">
+                            <source src="../assets/audio/Late Night Talking.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player11').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">12.</span> Bam Bam </h3>
+                    <h4> Camilla Cabello, Ed Sheeran </h4>
+                </td>
+                <td>
+                    <audio id="player12">
+                            <source src="../assets/audio/Bam Bam (feat. Ed Sheeran).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player12').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">13.</span> Provenza </h3>
+                    <h4> KAROL G </h4>
+                </td>
+                <td>
+                    <audio id="player13">
+                            <source src="../assets/audio/PROVENZA.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player13').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">14.</span> Where Are You Now </h3>
+                    <h4> Lost Frequencies </h4>
+                </td>
+                <td>
+                    <audio id="player14">
+                            <source src="../assets/audio/Where Are You Now.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player14').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">15.</span> Yet To Come </h3>
+                    <h4> BTS </h4>
+                </td>
+                <td>
+                    <audio id="player15">
+                            <source src="../assets/audio/Yet To Come.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player15').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">16.</span> THATS WHAT I WANT </h3>
+                    <h4> Lil Nas X </h4>
+                </td>
+                <td>
+                    <audio id="player16">
+                            <source src="../assets/audio/THATS WHAT I WANT.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player16').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">17.</span> Cooped Up (whith Roddy Ricch) </h3>
+                    <h4> Post Malone, Roddy Ricch</h4>
+                </td>
+                <td>
+                    <audio id="player17">
+                            <source src="../assets/audio/Cooped Up (with Roddy Ricch).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player17').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">18.</span> Vegas </h3>
+                    <h4> Doja Cat </h4>
+                </td>
+                <td>
+                    <audio id="player18">
+                            <source src="../assets/audio/Vegas (From the Original Motion Picture Soundtrack ELVIS).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player18').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">19.</span> Big Energy </h3>
+                    <h4> Latto </h4>
+                </td>
+                <td>
+                    <audio id="player19">
+                            <source src="../assets/audio/Big Energy.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player19').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">20.</span> Te felicito </h3>
+                    <h4> Shakira, Rauw Alejandro </h4>
+                </td>
+                <td>
+                    <audio id="player20">
+                        <source src="../assets/audio/Te Felicito.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player20').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">21.</span> Light Switch </h3>
+                    <h4> Charlie Puth </h4>
+                </td>
+                <td>
+                    <audio id="player21">
+                        <source src="../assets/audio/Light My Fire (2017 Remaster).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player21').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">22.</span> Sunroof </h3>
+                    <h4> Nicky Youre, dazy </h4>
+                </td>
+                <td>
+                    <audio id="player22">
+                        <source src="../assets/audio/Sunroof.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player22').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">23.</span> Potion (with Dua Lipa & Young Thug) </h3>
+                    <h4> Calvin Harris, Dua Lipa, Young Thug </h4>
+                </td>
+                <td>
+                    <audio id="player23">
+                        <source src="../assets/audio/Potion (with Dua Lipa & Young Thug).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player23').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">24.</span> MIDDLE OF THE NIGHT </h3>
+                    <h4> Elley Duhé </h4>
+                </td>
+                <td>
+                    <audio id="player24">
+                        <source src="../assets/audio/MIDDLE OF THE NIGHT.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player24').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">25.</span> So Good </h3>
+                    <h4> Halsey </h4>
+                </td>
+                <td>
+                    <audio id="player25">
+                        <source src="../assets/audio/So Good.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player25').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">26.</span>she's all i wanna be </h3>
+                    <h4> Tate McRae </h4>
+                </td>
+                <td>
+                    <audio id="player26">
+                        <source src="../assets/audio/she's all i wanna be.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player26').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">27.</span> I Ain't Worried </h3>
+                    <h4> OneRepublic </h4>
+                </td>
+                <td>
+                    <audio id="player27">
+                        <source src="../assets/audio/I Ain't Worried.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player27').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">28.</span> Sweetest Pie </h3>
+                    <h4> Megan The Stallion, Dua Lipa </h4>
+                </td>
+                <td>
+                    <audio id="player28">
+                        <source src="../assets/audio/Sweetest Pie.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player28').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">29.</span> Me Porto Bonito </h3>
+                    <h4> Bad Bunny, Chencho Corleone </h4>
+                </td>
+                <td>
+                    <audio id="player29">
+                        <source src="../assets/audio/Me Porto Bonito.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player29').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">30.</span> Cash In Cash Out </h3>
+                    <h4> Pharrell Williams, 21 Savage & Tyler, the creator </h4>
+                </td>
+                <td>
+                    <audio id="player30">
+                        <source src="../assets/audio/Cash In Cash Out.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player30').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">31.</span> STAY (with Justin Bieber) </h3>
+                    <h4> The Kid LAROI, Justin Bieber </h4>
+                </td>
+                <td>
+                    <audio id="player31">
+                        <source src="../assets/audio/STAY (with Justin Bieber).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player31').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">32.</span> Heat Waves </h3>
+                    <h4> Glass Animals </h4>
+                </td>
+                <td>
+                    <audio id="player32">
+                        <source src="../assets/audio/Heat Waves.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player32').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">33.</span> Hold My Hand </h3>
+                    <h4> Lady Gaga </h4>
+                </td>
+                <td>
+                    <audio id="player33">
+                        <source src="../assets/audio/Hold My Hand.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player33').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">34.</span> Shivers </h3>
+                    <h4> Ed Sheeran </h4>
+                </td>
+                <td>
+                    <audio id="player34">
+                        <source src="../assets/audio/Shivers.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player34').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">35.</span> Numb </h3>
+                    <h4> Marshmello, Khalid </h4>
+                </td>
+                <td>
+                    <audio id="player35">
+                        <source src="../assets/audio/Numb.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player35').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">36.</span> Until I Found You </h3>
+                    <h4> Stephen Sanchez </h4>
+                </td>
+                <td>
+                    <audio id="player36">
+                        <source src="../assets/audio/Until I Found You.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player36').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">37.</span> Thousand Miles </h3>
+                    <h4> The Kid LAROI </h4>
+                </td>
+                <td>
+                    <audio id="player37">
+                        <source src="../assets/audio/Thousand Miles.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player37').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">38.</span> True Love </h3>
+                    <h4> Kanye West, XXXTENTACION </h4>
+                </td>
+                <td>
+                    <audio id="player38">
+                        <source src="../assets/audio/True Love.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player38').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">39.</span> Die Hard </h3>
+                    <h4> Kendrick Lamar, Blxst, Amanda Reifer </h4>
+                </td>
+                <td>
+                    <audio id="player39">
+                        <source src="../assets/audio/Die Hard.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player39').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">40.</span> Cold Heart - PNAU Remix </h3>
+                    <h4> Elton Jhon, Dua Lipa </h4>
+                </td>
+                <td>
+                    <audio id="player40">
+                        <source src="../assets/audio/Cold Heart - PNAU Remix.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player40').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">41.</span> Boyfriend </h3>
+                    <h4> Dove Cameron </h4>
+                </td>
+                <td>
+                    <audio id="player41">
+                        <source src="../assets/audio/Boyfriend.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player41').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">42.</span> In The Stars </h3>
+                    <h4> Benson Boone </h4>
+                </td>
+                <td>
+                    <audio id="player42">
+                        <source src="../assets/audio/In The Stars.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player42').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">43.</span> SUPERMODEL </h3>
+                    <h4> Maneskin </h4>
+                </td>
+                <td>
+                    <audio id="player43">
+                        <source src="../assets/audio/SUPERMODEL.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player43').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">44.</span> INDUSTRY BABY (feat. Jack Harlow) </h3>
+                    <h4> Lil Nas X, Jack Harlow </h4>
+                </td>
+                <td>
+                    <audio id="player44">
+                        <source src="../assets/audio/INDUSTRY BABY (feat. Jack Harlow).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player44').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">45.</span> N95 </h3>
+                    <h4> Kendrick Lamar </h4>
+                </td>
+                <td>
+                    <audio id="player45">
+                        <source src="../assets/audio/N95.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player35').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">46.</span> love nwantiti (ah ah ah) </h3>
+                    <h4> CKay </h4>
+                </td>
+                <td>
+                    <audio id="player46">
+                        <source src="../assets/audio/love nwantiti (ah ah ah).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player46').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">47.</span> Die Young (feat. 347aidan) </h3>
+                    <h4> Sleepy Hallow, 347aidan </h4>
+                </td>
+                <td>
+                    <audio id="player47">
+                        <source src="../assets/audio/Die Young (feat. 347aidan).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player47').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">48.</span> Where Did You Go? (feat. MNEK) </h3>
+                    <h4> Jax Jones, MNEK </h4>
+                </td>
+                <td>
+                    <audio id="player48">
+                        <source src="../assets/audio/Where Did You Go  (feat. MNEK).mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player48').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">49.</span> The Motto </h3>
+                    <h4> Tiesto, Ava Max </h4>
+                </td>
+                <td>
+                    <audio id="player49">
+                        <source src="../assets/audio/The Motto.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player49').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">50.</span> MAMIII </h3>
+                    <h4> Becky G, KAROL G </h4>
+                </td>
+                <td>
+                    <audio id="player50">
+                        <source src="../assets/audio/MAMIII.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player50').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

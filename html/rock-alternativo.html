@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Rock alternativo</title>
+    <link rel="stylesheet" href="../css/playlist-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href=""><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href=""><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href=""><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/capa-2.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Rock alternativo</h1>
+        <h3 id="descricao">Seleção de rock alternativo para pessoas alternativas.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> Sweater Weather </h3>
+                    <h4> The Neighbourhood </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/The Neighbourhood - Sweater Weather (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">2.</span> Do I Wanna Know? </h3>
+                    <h4> Arctic Monkeys </h4>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Arctic Monkeys - Do I Wanna Know_ (Official Video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">3.</span> Somebody Else </h3>
+                    <h4> The 1975 </h4>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/The 1975 - Somebody Else (Official Video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">4.</span> Pontos de Exclamação </h3>
+                    <h4> Jovem Dionisio </h4>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Jovem Dionisio - Pontos de Exclamação (Clipe Oficial).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">5.</span> Last Nite </h3>
+                    <h4> The Strokes </h4>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/The Strokes - Last Nite (Official Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">6.</span> Pumped up kicks </h3>
+                    <h4> Foster The People </h4>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/Foster The People - Pumped Up Kicks (Official Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">7.</span> SUPERMODEL </h3>
+                    <h4> Måneskin </h4>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Måneskin - SUPERMODEL (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">8.</span> Crystalised </h3>
+                    <h4> The XX </h4>
+                </td>
+                <td>
+                    <audio id="player8">
+                            <source src="../assets/audio/The xx - Crystalised (Official Video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player8').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">9.</span> The Less I Know the Better </h3>
+                    <h4> Tame Impala </h4>
+                </td>
+                <td>
+                    <audio id="player9">
+                            <source src="../assets/audio/Tame Impala - The Less I Know the Better (Official Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player9').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">10.</span> Riptide </h3>
+                    <h4> Vance Joy </h4>
+                </td>
+                <td>
+                    <audio id="player10">
+                            <source src="../assets/audio/Vance Joy - Riptide (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player10').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">11.</span> Pompeii </h3>
+                    <h4> Bastille </h4>
+                </td>
+                <td>
+                    <audio id="player11">
+                            <source src="../assets/audio/Bastille - Pompeii (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player11').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">12.</span> Little Talks</h3>
+                    <h4> Of Monsters And Men </h4>
+                </td>
+                <td>
+                    <audio id="player12">
+                            <source src="../assets/audio/Of Monsters And Men - Little Talks (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player12').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">13.</span> Light my fire </h3>
+                    <h4> The Doors </h4>
+                </td>
+                <td>
+                    <audio id="player13">
+                            <source src="../assets/audio/Light My Fire (2017 Remaster).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player13').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">14.</span> Feel Good </h3>
+                    <h4> Gorillaz </h4>
+                </td>
+                <td>
+                    <audio id="player14">
+                            <source src="../assets/audio/Gorillaz - Feel Good Inc. Lyrics.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player14').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">15.</span> Stressed Out </h3>
+                    <h4> Twenty One Pilots </h4>
+                </td>
+                <td>
+                    <audio id="player15">
+                            <source src="../assets/audio/Stressed Out by Twenty One Pilots (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player15').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">16.</span> Smells Like Teen Spirit </h3>
+                    <h4> Nirvana </h4>
+                </td>
+                <td>
+                    <audio id="player16">
+                            <source src="../assets/audio/Nirvana - Smells Like Teen Spirit (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player16').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">17.</span> Losing My Religion </h3>
+                    <h4> R.E.M </h4>
+                </td>
+                <td>
+                    <audio id="player17">
+                            <source src="../assets/audio/R.E.M. - Losing My Religion Lyrics.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player17').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">18.</span> Creep </h3>
+                    <h4> The Radiohead </h4>
+                </td>
+                <td>
+                    <audio id="player18">
+                            <source src="../assets/audio/Creep - Radiohead (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player18').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">19.</span> The Only Exception </h3>
+                    <h4> Paramore </h4>
+                </td>
+                <td>
+                    <audio id="player19">
+                            <source src="../assets/audio/Paramore - The Only Exception (HQ Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player19').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">20.</span> What You Know </h3>
+                    <h4> Two Door Cinema Club </h4>
+                </td>
+                <td>
+                    <audio id="player20">
+                        <source src="../assets/audio/Two Door Cinema Club - What You Know.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player20').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

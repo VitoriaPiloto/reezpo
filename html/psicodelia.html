@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Pisicodelia</title>
+    <link rel="stylesheet" href="../css/playlist-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href=""><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href=""><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href=""><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/capa-1.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Psicodelia</h1>
+        <h3 id="descricao">Seleções psicodélicas para você curtir. Rock 60's, trance, raggae e tudo o que há de mais acid.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> brian jonestown massacre </h3>
+                    <h4> Panic in Babylon </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/Panic in Babylon - brian jonestown massacre.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">2.</span> Double Freedom </h3>
+                    <h4> Samsara Blues Experiment </h4>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Double Freedom.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">3.</span> Drivin' Sideways </h3>
+                    <h4> Merrell Fankhauser & HMS Bounty </h4>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Merrell Fankhauser And (His Trusty) H.M.S. Bounty! -Drivin' Sideways On A One Way Street 1968.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">4.</span> Eight Miles High </h3>
+                    <h4> The Byrds </h4>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/The Byrds - Eight Miles High (Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">5.</span> Incense and Peppermints </h3>
+                    <h4> Strawberry Alarm Clock </h4>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Incense And Peppermints (Stereo Version).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">6.</span> HOW TO FLY </h3>
+                    <h4> STICKY FINGERS </h4>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/STICKY FINGERS - HOW TO FLY (Official video).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">7.</span> One Way Trip To The Sun </h3>
+                    <h4> Ditch </h4>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Ditch - One Way Trip To The Sun.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">8.</span> Portal do Universo </h3>
+                    <h4> Chapeleiro, Samantha Machado </h4>
+                </td>
+                <td>
+                    <audio id="player8">
+                            <source src="../assets/audio/Portal do Universo - Chapeleiro, Samantha Machado ft. Sandrão RZO, Nego Jam, Valente.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player8').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">9.</span> White Room </h3>
+                    <h4> Cream </h4>
+                </td>
+                <td>
+                    <audio id="player9">
+                            <source src="../assets/audio/Cream - White Room - Lyrics.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player9').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">10.</span> Porpoise Song </h3>
+                    <h4> Monkees </h4>
+                </td>
+                <td>
+                    <audio id="player10">
+                            <source src="../assets/audio/Porpoise Song (Theme from _Head_).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player10').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">11.</span> Porpoise Song </h3>
+                    <h4> Monkees </h4>
+                </td>
+                <td>
+                    <audio id="player11">
+                            <source src="../assets/audio/Porpoise Song (Theme from _Head_).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player11').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">12.</span> Heart Full Of Soul </h3>
+                    <h4> The Yardbirds </h4>
+                </td>
+                <td>
+                    <audio id="player12">
+                            <source src="../assets/audio/The Yardbirds - Heart Full Of Soul.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player12').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">13.</span> Light my fire </h3>
+                    <h4> The Doors </h4>
+                </td>
+                <td>
+                    <audio id="player13">
+                            <source src="../assets/audio/Light My Fire (2017 Remaster).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player13').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">14.</span> Summertime Blues </h3>
+                    <h4> Blue Cheer </h4>
+                </td>
+                <td>
+                    <audio id="player14">
+                            <source src="../assets/audio/Light My Fire (2017 Remaster).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player14').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">15.</span> Follow Me </h3>
+                    <h4> Space Frog & The Grim Reaper </h4>
+                </td>
+                <td>
+                    <audio id="player15">
+                            <source src="../assets/audio/Space Frog _ The Grim Reaper -  Follow me (Original, HD Sound).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player15').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">16.</span> I Had Too Much To Dream Last Night </h3>
+                    <h4> The Electric Prunes </h4>
+                </td>
+                <td>
+                    <audio id="player16">
+                            <source src="../assets/audio/The Electric Prunes   I Had Too Much To Dream Last Night.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player16').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">17.</span> Get Together </h3>
+                    <h4> The Youngbloods </h4>
+                </td>
+                <td>
+                    <audio id="player17">
+                            <source src="../assets/audio/The Youngbloods - Get Together (Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player17').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">18.</span> My World Fell Down </h3>
+                    <h4> Sagittarius </h4>
+                </td>
+                <td>
+                    <audio id="player18">
+                            <source src="../assets/audio/My World Fell Down.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player18').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">19.</span> Harder, Better, Faster, Stronger </h3>
+                    <h4> Daft Punk </h4>
+                </td>
+                <td>
+                    <audio id="player19">
+                            <source src="../assets/audio/Daft Punk - Harder, Better, Faster, Stronger (Official Audio).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player19').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">20.</span> Flying High </h3>
+                    <h4> Country Joe & The fish </h4>
+                </td>
+                <td>
+                    <audio id="player20">
+                        <source src="../assets/audio/Country Joe _ The Fish _Flying High_.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player20').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>
