@@ -35,6 +35,10 @@ a.generos {
     text-decoration: none;
 }
 
+a.generos:hover {
+    color: #ecfff8;
+}
+
 div#usuario h4 {
     position: absolute;
     left: 7%;

@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 1.5%;
+    width: 20vw;
+    float: left;
+    background-color: #55286f;
+    height: 205.4vh;
+}
+
+img#user {
+    width: 20%;
+    border-radius: 100%;
+}
+
+div#usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a.generos {
+    color: #995cbc;
+    text-decoration: none;
+}
+
+a.generos:hover {
+    color: #ecfff8;
+}
+
+div#usuario h4 {
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    color: #ecfff8;
+}
+
+#sep-us {
+    margin-top: 3vh;
+    height: 0.1px;
+    border: 0.5px solid #995cbc;
+    background-color: #995cbc;
+}
+
+#menu-sep {
+    margin-top: 3vh;
+    color: #995cbc;
+}
+
+select {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: url(../assets/img/icons8-downward-32.png) 50% / 15% no-repeat transparent;
+    padding: 1%;
+    position: absolute;
+    top: 5.5%;
+    left: 14%;
+}
+
+#img-dsv {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-trd {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 20px 5px 15px 5px;
+}
+
+#img-pdc {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+#img-plst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-fst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+div#discover a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 23vh;
+}
+
+div#trending a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 29vh;
+}
+
+div#podcasts a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 37vh;
+}
+
+div#playlists a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 44vh;
+}
+
+div#festas a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 51vh;
+}
+
+div#discover li,
+div#trending li,
+div#podcasts li,
+div#playlists li,
+div#festas li {
+    display: flex;
+    flex-direction: row;
+}
+
+div#discover,
+div#trending,
+div#podcasts,
+div#playlists,
+div#festas {
+    padding: 2%;
+}
+
+span#pod {
+    color: #ecfff8;
+}
+
+h1 {
+    color: #ecfff8;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    color: #ecfff8;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 2.3vh;
+    height: 0.1px;
+    border: 0.5px solid #FEC84E;
+    background-color: #FEC84E;
+    width: 50%
+}
+
+div#abraco {
+    margin: auto;
+    position: inherit;
+    bottom: 0px;
+    width: 100%;
+    height: 10vh;
+    background-color: #F45B69;
+}
+
+#play,
+#pause {
+    width: 7%;
+}
+
+#play-td {
+    width: 10%;
+}
+
+#volume-up,
+#volume-down {
+    width: 10%;
+}
+
+div#controls {
+    width: 100%;
+    padding-left: 10vw;
+    padding-top: 2vh;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+div#musicas table {
+    padding: 5vh;
+}
+
+.colocacao {
+    color: #FEC84E;
+    font-size: 3vh;
+    margin-right: 0.5vw;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+td {
+    width: 30%;
+}
+
+table {
+    height: 100vh;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+#capa {
+    margin-top: 5vh;
+    margin-left: 27vw;
+    width: 20%;
+    border: 10px solid rgb(0, 153, 255);
+}
+
+.capa-pod {
+    width: 40%;
+    padding: 0px;
+    margin-left: 12vw;
+}
+
+#descricao {
+    text-align: center;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+    section {
+        display: none;
+    }
+    #capa {
+        width: 30%;
+        margin-left: 34vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        box-sizing: border-box;
+    }
+    #abraco {
+        display: inline-flex;
+    }
+    #volume-up,
+    #volume-down {
+        display: none;
+    }
+}
