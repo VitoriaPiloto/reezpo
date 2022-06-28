@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | No passinho</title>
+    <link rel="stylesheet" href="../css/podcastpage-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section id="passinho">
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html"><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/nopassinho.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()"> No Passinho Do Funk </h1>
+        <h3 id="descricao">Quer entender passo a passo como funciona o funk? A série No Passinho do Funk vai te explicar os diversos aspectos do movimento funk: bailes, equipes de som, letras, músicas, como viver de funk e como ele funciona pelo Brasil. Também vamos te
+            responder a pergunta: por que o funk ainda incomoda tanto? </h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 1 </span> O baile todo- como acontece uma festa de funk, com DJ Rennan da Penha e Fernanda Souza </h3>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/1. O baile todo- como acontece uma festa de funk, com DJ Rennan da Penha e Fernanda Souza.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 2 </span> Da ostentação ao proibidão- como escrever uma letra de funk, com MC Neguinho do Kaxeta e MC Menor do Chapa </h3>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/2. Da ostentação ao proibidão- como escrever uma letra de funk, com MC Neguinho do Kaxeta e MC Menor do Chapa.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 3 </span> Solta o som, DJ- a produção do funk, com Dennis DJ e MC WM </h3>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/3. Solta o som, DJ- a produção do funk, com Dennis DJ e MC WM.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 4 </span> Do passinho ao ganha-pão- como viver de funk, com Tainá Costa e DJ Iasmin Turbininha </h3>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/4. Do passinho ao ganha-pão- como viver de funk, com Tainá Costa e DJ Iasmin Turbininha.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 5 </span> Criminalização e preconceito- por que o funk incomoda tanto Com MC Leonardo e DJ Baphafinha </h3>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/5. Criminalização e preconceito- por que o funk incomoda tanto  Com MC Leonardo e DJ Baphafinha.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/nopassinho.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 6 </span> Do eletrofunk ao brega funk- como um estilo une o Brasil, com Edy Lemond e Dadá Boladão </h3>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/6. Do eletrofunk ao brega funk- como um estilo une o Brasil, com Edy Lemond e Dadá Boladão.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

@@ -14,7 +14,29 @@ section {
     width: 20vw;
     float: left;
     background-color: #55286f;
-    height: 205.4vh;
+    height: 211vh;
+}
+
+section#disk {
+    height: 225.5vh;
+}
+
+section#flow,
+section#passinho {
+    height: 205vh;
+}
+
+section#sci {
+    height: 205vh;
+}
+
+section#habitat {
+    height: 227vh;
+}
+
+section#vinil,
+section#vfsm {
+    height: 230.5vh;
 }
 
 img#user {
@@ -192,7 +214,7 @@ hr {
 
 div#abraco {
     margin: auto;
-    position: inherit;
+    position: relative;
     bottom: 0px;
     width: 100%;
     height: 10vh;
@@ -266,8 +288,12 @@ table {
 }
 
 #descricao {
-    text-align: center;
+    text-align: left;
+    position: relative;
+    left: 5%;
+    padding-right: 10%;
     margin-bottom: 10px;
+    margin-top: 10px;
     visibility: hidden;
 }
 

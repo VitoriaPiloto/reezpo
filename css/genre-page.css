@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+section {
+    padding: 1.5%;
+    width: 20vw;
+    float: left;
+    background-color: #55286f;
+    height: 100vh;
+}
+
+img#user {
+    width: 20%;
+    border-radius: 100%;
+}
+
+div#usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a.generos {
+    color: #995cbc;
+    text-decoration: none;
+}
+
+a.generos:hover {
+    color: #ecfff8;
+}
+
+div#usuario h4 {
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    color: #ecfff8;
+}
+
+#sep-us {
+    margin-top: 3vh;
+    height: 0.1px;
+    border: 0.5px solid #995cbc;
+    background-color: #995cbc;
+}
+
+#menu-sep {
+    margin-top: 3vh;
+    color: #995cbc;
+}
+
+select {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: url(../assets/img/icons8-downward-32.png) 50% / 15% no-repeat transparent;
+    padding: 1%;
+    position: absolute;
+    top: 5.5%;
+    left: 14%;
+}
+
+#img-dsv {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-trd {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 20px 5px 15px 5px;
+}
+
+#img-pdc {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+#img-plst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-fst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+#img-manutencao {
+    width: 40vh;
+    float: right;
+    margin-top: 7vh;
+    margin-right: 10vw;
+}
+
+#titulo-manutencao {
+    position: relative;
+    top: 15vh;
+    left: 10vw;
+    color: rgb(0, 153, 255);
+}
+
+div#discover a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 23vh;
+}
+
+div#trending a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 29vh;
+}
+
+div#podcasts a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 37vh;
+}
+
+div#playlists a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 44vh;
+}
+
+div#festas a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 51vh;
+}
+
+div#discover li,
+div#trending li,
+div#podcasts li,
+div#playlists li,
+div#festas li {
+    display: flex;
+    flex-direction: row;
+}
+
+div#discover,
+div#trending,
+div#podcasts,
+div#playlists,
+div#festas {
+    padding: 2%;
+}
+
+span#descubra,
+span#pod,
+span#playlist,
+span#festa {
+    color: #ecfff8;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    margin-top: 3.5vh;
+    margin-bottom: 3vh;
+    border: 1px double #FEC84E;
+}
+
+div#rap div.column,
+div#mpb div.column {
+    width: 33%;
+}
+
+.column {
+    float: left;
+    width: 23%;
+}
+
+.row {
+    padding-top: 4vh;
+    padding-left: 27vw;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img#capa-1,
+img#capa-2,
+img#capa-3 {
+    width: 30vh;
+}
+
+h1 {
+    color: #ecfff8;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+h2 {
+    color: #ecfff8;
+    margin-left: 27vw;
+    margin-top: 10vh;
+}
+
+h3 {
+    position: relative;
+    top: 1vh;
+    left: 3vw;
+}
+
+a {
+    text-decoration: none;
+    color: #ecfff8;
+}
+
+#linha-2 {
+    margin-top: -140vh;
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        display: none;
+    }
+    #linha-2 {
+        margin-top: 0vh;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+}

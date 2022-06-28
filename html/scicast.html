@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | scicast</title>
+    <link rel="stylesheet" href="../css/podcastpage-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section id="sci">
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html"><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/scicast.png" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Scicast</h1>
+        <h3 id="descricao">O podcast sobre ciência mais divertido da internet brasileira traz semanalmente informação, cultura e diversão envolvendo o público e tornando o aprendizado leve, simples e descomplicado.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <img src="../assets/img/scicast.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#490 </span> Cuidados Paliativos </h3>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/SciCast490_Cuidados_Paliativos.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/scicast.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#489 </span> Telescopios </h3>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/SciCast489_Telescopios.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/scicast.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#488 </span> Reforma Psiquiátrica </h3>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Scicast488_reforma_psiquiatrica.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/scicast.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#487 </span> História da Loucura </h3>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/SciCast487_Historia_da_Loucura.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/scicast.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#486 </span> Presidencialismo </h3>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Scicast486_Presidencialismo.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

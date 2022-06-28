@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 1.5%;
+    width: 20vw;
+    float: left;
+    background-color: #55286f;
+    height: 211vh;
+}
+
+section#disk {
+    height: 225.5vh;
+}
+
+section#flow,
+section#passinho {
+    height: 205vh;
+}
+
+section#sci {
+    height: 205vh;
+}
+
+section#habitat {
+    height: 227vh;
+}
+
+section#vinil,
+section#vfsm {
+    height: 230.5vh;
+}
+
+img#user {
+    width: 20%;
+    border-radius: 100%;
+}
+
+div#usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a.generos {
+    color: #995cbc;
+    text-decoration: none;
+}
+
+a.generos:hover {
+    color: #ecfff8;
+}
+
+div#usuario h4 {
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    color: #ecfff8;
+}
+
+#sep-us {
+    margin-top: 3vh;
+    height: 0.1px;
+    border: 0.5px solid #995cbc;
+    background-color: #995cbc;
+}
+
+#menu-sep {
+    margin-top: 3vh;
+    color: #995cbc;
+}
+
+select {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: url(../assets/img/icons8-downward-32.png) 50% / 15% no-repeat transparent;
+    padding: 1%;
+    position: absolute;
+    top: 5.5%;
+    left: 14%;
+}
+
+#img-dsv {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-trd {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 20px 5px 15px 5px;
+}
+
+#img-pdc {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+#img-plst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 10px 20px 15px 5px;
+}
+
+#img-fst {
+    width: 9.5%;
+    padding: 2%;
+    background-color: #FEC84E;
+    border-radius: 15px 7px 10px 5px;
+}
+
+#img-rir {
+    position: relative;
+    top: 7vh;
+    left: 30vw;
+    border: 5px dotted #995cbc;
+}
+
+div#discover a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 23vh;
+}
+
+div#trending a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1vw;
+    position: absolute;
+    top: 29vh;
+}
+
+div#podcasts a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 37vh;
+}
+
+div#playlists a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 44vh;
+}
+
+div#festas a {
+    color: #995cbc;
+    text-decoration: none;
+    padding-left: 1.2vw;
+    position: absolute;
+    top: 51vh;
+}
+
+div#discover li,
+div#trending li,
+div#podcasts li,
+div#playlists li,
+div#festas li {
+    display: flex;
+    flex-direction: row;
+}
+
+div#discover,
+div#trending,
+div#podcasts,
+div#playlists,
+div#festas {
+    padding: 2%;
+}
+
+div.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span#pod {
+    color: #ecfff8;
+}
+
+h1 {
+    color: #ecfff8;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: #ecfff8;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 0.1px;
+    border: 0.5px solid #FEC84E;
+    background-color: #FEC84E;
+    width: 50%
+}
+
+td {
+    margin-top: 5vh;
+    margin-left: 7vh;
+}
+
+table tr,
+table td {
+    border-bottom: 2px solid #FEC84E;
+    padding: 3vh;
+}
+
+h4 a {
+    color: rgb(0, 153, 255);
+}
+
+table {
+    border-collapse: collapse;
+    position: relative;
+    top: 15vh;
+    left: 12vw;
+    width: 100%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}

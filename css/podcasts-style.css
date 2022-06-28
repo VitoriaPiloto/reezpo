@@ -161,7 +161,10 @@ div#festas {
     padding: 2%;
 }
 
-span#descubra {
+span#descubra,
+span#pod,
+span#playlist,
+span#festa {
     color: #ecfff8;
 }
 

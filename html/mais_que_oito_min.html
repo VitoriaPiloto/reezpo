@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Mais Que Oito Minutos</title>
+    <link rel="stylesheet" href="../css/podcastpage-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html"><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/rafnha.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Mais Que Oito Minutos</h1>
+        <h3 id="descricao">Rafinha Bastos traz para um bate-papo, nomes importantes da política, do humor, da música e do esporte. Conversa informal ou debate quente? TUDO PODE ACONTECER!</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <img src="../assets/img/natalia.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#201 </span> Natalia Klein (Criadora da série Maldivas - Netflix) </h3>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/#201 - Natalia Klein (Criadora da série Maldivas - Netflix).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/especial.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#200 </span> Rafinha Bastos Responde (Episódio Especial) </h3>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/#200 - Rafinha Bastos Responde (Episódio Especial).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/joao.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#199 </span> João Gordo (Ratos de Porão e MTV Brasil) </h3>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/#199 - João Gordo (Ratos de Porão e MTV Brasil).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/gui.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#198 </span> Gui Guiovanonni (Comentarista NBA) </h3>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/#198 - Gui Guiovanonni (Comentarista NBA).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/fabiano.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#197 </span> Fabiano Cambota (Comediante de "A Culpa é do Cabral" - 2ª Participação) </h3>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/#197 - Fabiano Cambota (Comediante do 'A Culpa é do Cabral' - 2ª Participação).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/swhany.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#197 </span> Swhanny Rocha - Como é ser diarista nos EUA? </h3>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/#197 - Swhany Rocha - Como é ser diarista nos EUA .mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/especial 3mi.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">#196 </span> ESPECIAL 3 MILHÕES (Convidado surpresa) </h3>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/#196 - ESPECIAL DE 3 MILHÕES (Convidado Surpresa).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

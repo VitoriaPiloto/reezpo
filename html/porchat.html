@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Que história é essa, Porchat?</title>
+    <link rel="stylesheet" href="../css/podcastpage-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html">Playlists</a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/porchat.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Que História é essa, Porchat?</h1>
+        <h3 id="descricao">Fabio Porchat tira as melhores histórias de três convidados e participação da plateia com a intenção de buscar conexões entre eles.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <img src="../assets/img/astrid.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Astrid Fontenelle, Tainá Muller e Daniela Mercury </h3>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/Astrid Fontenelle, Tainá Muller e Daniela Mercury.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/carlinhos.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Carlinhos Maia, Laura Muller e Valentina Herszage </h3>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Carlinhos Maia, Laura Muller e Valentina Herszage..mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/giovanna.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Giovanna Ewbank, Chico Cesar e David Brazil </h3>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Giovanna Ewbank, Chico Cesar e David Brazil.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/mion.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Marcos Mion, Majur e Malu Rodrigues </h3>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Marcos Mion, Majur e Malu Rodrigues.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ricardo p.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Ricardo Pereira, Fernanda Nobre e Tierry </h3>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Ricardo Pereira, Fernanda Nobre e Tierry.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/roberta.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Roberta Miranda, Felipe Andreolli e Ed Gama </h3>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/Roberta Miranda, Felipe Andreolli e Ed Gama.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/simas.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> Rodrigo Simas, Sônia Bridi e Estevam Nabote </h3>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Rodrigo Simas, Sônia Bridi e Estevam Nabote.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

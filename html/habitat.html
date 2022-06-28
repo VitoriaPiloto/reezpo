@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Habitat</title>
+    <link rel="stylesheet" href="../css/podcastpage-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section id="habitat">
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html"><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/habitat.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()"> Habitat </h1>
+        <h3 id="descricao">Os seres humanos estão alterando o planeta em um ritmo que os outros seres vivos não estão conseguindo acompanhar. E cientistas acreditam que o grande número de espécies que estão desaparecendo em meio a essas mudanças indicam que nós estamos
+            provocando uma extinção em massa –a sexta na história da Terra. No Habitat, as jornalistas da Folha Jéssica Maes e Natália Silva viajam o Brasil para contar histórias de espécies ameaçadas, acompanhadas de quem está vendo elas desaparecerem.
+            O podcast tem apoio do Instituto Serrapilheira.</h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep1.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 1 </span> O mundo antes do mundo </h3>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/Episódio 1- O mundo antes do mundo.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep2.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 2 </span> O breu da floresta </h3>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Episódio 2- O breu da floresta.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep3.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 3 </span> A metrópole submarina </h3>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Episódio 3- A metrópole submarina.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep4.jpg" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 4 </span> Água é pop </h3>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Episódio 4- Água é pop.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep5.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 5 </span> Podemos confiar nas pesquisas eleitorais? - Parte 1 de 2 </h3>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Episódio 5- Nem um pio.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep6.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 6 </span> O bicho que estava aqui </h3>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/Episódio 6- O bicho que estava aqui.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../assets/img/ep7.png" class="capa-pod">
+                </td>
+                <td>
+                    <h3> <span class="colocacao">Episódio 7 </span> A sexta extinção </h3>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Episódio 7- A sexta extinção.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>

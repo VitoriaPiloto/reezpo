@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reezpo | Rock Classics</title>
+    <link rel="stylesheet" href="../css/playlist-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <div id="usuario">
+                <li>
+                    <img id="user" src="../assets/img/fulana.jpg">
+                </li>
+                <li>
+                    <h4>Fulana de Araújo </h4>
+                </li>
+                <li>
+                    <select id="mais-opções">
+                        <option selected> </option>
+                        <option>Sair</option>
+                        <option>Configurações</option>
+                    </select>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Menu</h4>
+            </li>
+            <div id="discover">
+                <li>
+                    <img id="img-dsv" src="../assets/img/album-de-musica.png">
+                    <h5><a href="dashboard.html">Descubra</a></h5>
+                </li>
+            </div>
+            <div id="trending">
+                <li>
+                    <img id="img-trd" src="../assets/img/andar-de-cima.png">
+                    <h5><a href="trending.html"><span id="trend">Trending</span></a></h5>
+                </li>
+            </div>
+            <div id="podcasts">
+                <li>
+                    <img id="img-pdc" src="../assets/img/microfone.png">
+                    <h5><a href="podcasts.html"><span id="pod">Podcasts</span></a></h5>
+                </li>
+            </div>
+            <div id="playlists">
+                <li>
+                    <img id="img-plst" src="../assets/img/fone-de-ouvido.png">
+                    <h5><a href="playlists.html"><span id="playlist"><span id="playlists">Playlists</span></span></a></h5>
+                </li>
+            </div>
+            <div id="festas">
+                <li>
+                    <img id="img-fst" src="../assets/img/ondas-sonoras.png">
+                    <h5><a href="proximas-festas.html"><span id="festa">Próximas festas</span></a></h5>
+                </li>
+            </div>
+            <li>
+                <hr id="sep-us">
+                <h4 id="menu-sep">Estilos mais ouvidos</h4>
+            </li>
+            <li>
+                <h5><a href="pop.html" class="generos">Pop</a></h5>
+            </li>
+            <li>
+                <h5><a href="mpb.html" class="generos">MPB</a></h5>
+            </li>
+            <li>
+                <h5><a href="eletronica.html" class="generos">Eletrônica</a></h5>
+            </li>
+            <li>
+                <h5><a href="rock.html" class="generos">Rock</a></h5>
+            </li>
+        </ul>
+    </section>
+    <div id="musicas">
+        <img src="../assets/img/classicosrock.jpg" id="capa">
+        <h1 onmouseover="mostrarDescricao()" onmouseout="esconderDescricao()">Rock Classics</h1>
+        <h3 id="descricao"> Maiores clássicos do rock de todos os tempos, imortais. </h3>
+        <hr class="center">
+        <table>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">1.</span> All Along The Watchtower </h3>
+                    <h4> Jimi Hendrix </h4>
+                </td>
+                <td>
+                    <audio id="player">
+                            <source src="../assets/audio/All Along the Watchtower.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">2.</span> Gimme Shelter </h3>
+                    <h4> The Rolling Stones </h4>
+                </td>
+                <td>
+                    <audio id="player2">
+                            <source src="../assets/audio/Gimme Shelter.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player2').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">3.</span> Detroit Rock City </h3>
+                    <h4> KISS </h4>
+                </td>
+                <td>
+                    <audio id="player3">
+                            <source src="../assets/audio/Detroit Rock City.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player3').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">4.</span> Wish You Were Here </h3>
+                    <h4> Pink Floyd </h4>
+                </td>
+                <td>
+                    <audio id="player4">
+                            <source src="../assets/audio/Wish You Were Here.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player4').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">5.</span> Smells Like Teen Spirit </h3>
+                    <h4> Nirvana </h4>
+                </td>
+                <td>
+                    <audio id="player5">
+                            <source src="../assets/audio/Smells Like Teen Spirit.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player5').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">6.</span> Paradise City </h3>
+                    <h4> Guns n' Roses </h4>
+                </td>
+                <td>
+                    <audio id="player6">
+                            <source src="../assets/audio/Paradise City.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player6').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">7.</span> Let's Go Crazy </h3>
+                    <h4> Prince </h4>
+                </td>
+                <td>
+                    <audio id="player7">
+                            <source src="../assets/audio/Let's Go Crazy.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player7').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">8.</span> Another One Bites The Dust </h3>
+                    <h4> Queen </h4>
+                </td>
+                <td>
+                    <audio id="player8">
+                            <source src="../assets/audio/Another One Bites The Dust - Remastered 2011.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player8').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">9.</span> Highway to Hell </h3>
+                    <h4> AC/DC </h4>
+                </td>
+                <td>
+                    <audio id="player9">
+                            <source src="../assets/audio/Highway to Hell.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player9').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">10.</span> I Love Rock 'n Roll </h3>
+                    <h4> Joan Jett and The Blackhearts </h4>
+                </td>
+                <td>
+                    <audio id="player10">
+                            <source src="../assets/audio/I Love Rock 'N Roll.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player10').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">11.</span> Whole Lotta Love </h3>
+                    <h4> Led Zeppelin </h4>
+                </td>
+                <td>
+                    <audio id="player11">
+                            <source src="../assets/audio/Whole Lotta Love - 1990 Remaster.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player11').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">12.</span> Creep </h3>
+                    <h4> Radiohead </h4>
+                </td>
+                <td>
+                    <audio id="player12">
+                            <source src="../assets/audio/Creep - Radiohead (Lyrics).mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player12').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">13.</span> Something In The Way </h3>
+                    <h4> Nirvana </h4>
+                </td>
+                <td>
+                    <audio id="player13">
+                            <source src="../assets/audio/Something In The Way.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player13').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">14.</span> Dream On </h3>
+                    <h4> Aerosmith </h4>
+                </td>
+                <td>
+                    <audio id="player14">
+                            <source src="../assets/audio/Dream On.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player14').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">15.</span> Livin' On A Prayer </h3>
+                    <h4> Bon Jovi </h4>
+                </td>
+                <td>
+                    <audio id="player15">
+                            <source src="../assets/audio/Livin' On A Prayer.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player15').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">16.</span> The Boys Are Back In Town </h3>
+                    <h4> Thin Lizzy </h4>
+                </td>
+                <td>
+                    <audio id="player16">
+                            <source src="../assets/audio/The Boys Are Back In Town.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player16').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">17.</span> Don't Stop Believing </h3>
+                    <h4> Journey </h4>
+                </td>
+                <td>
+                    <audio id="player17">
+                            <source src="../assets/audio/Don't Stop Believin'.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player17').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">18.</span> Seven Nation Army </h3>
+                    <h4> The White Stripes </h4>
+                </td>
+                <td>
+                    <audio id="player18">
+                            <source src="../assets/audio/Seven Nation Army.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player18').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">19.</span> Hotel California </h3>
+                    <h4> Eagles </h4>
+                </td>
+                <td>
+                    <audio id="player19">
+                            <source src="../assets/audio/Hotel California - 2013 Remaster.mp3">
+                        </audio>
+                    <button onclick="document.getElementById('player19').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <h3> <span class="colocacao">20.</span> La Grange </h3>
+                    <h4> ZZ Top </h4>
+                </td>
+                <td>
+                    <audio id="player20">
+                        <source src="../assets/audio/La Grange - 2005 Remaster.mp3">
+                    </audio>
+                    <button onclick="document.getElementById('player20').play()"><img id="play-td" src="../assets/img/botao-de-jogo.png"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="abraco">
+        <div id="controls">
+            <button id="btn-play" onclick="document.getElementById('player').play()"><img id="play" src="../assets/img/botao-de-jogo.png"></button>
+            <button id="btn-pause" onclick="document.getElementById('player').pause()"><img id="pause" src="../assets/img/pause-xxl.png"></button>
+            <button id="btn-up" onclick="document.getElementById('player').volume += 0.1"><img id="volume-up" src="../assets/img/audio-add-xxl.png"></button>
+            <button id="btn-down" onclick="document.getElementById('player').volume -= 0.1"><img id="volume-down" src="../assets/img/audio-remove-xxl.png"></button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'visible';
+        }
+
+        function esconderDescricao() {
+            const descricao = document.getElementById("descricao");
+            descricao.style.visibility = 'hidden';
+        }
+    </script>
+</body>
+
+</html>
